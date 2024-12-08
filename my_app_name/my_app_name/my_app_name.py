@@ -8,11 +8,16 @@ from my_app_name.pages.about import about
 from my_app_name.pages.contact import contact
 from my_app_name.pages.archive import archive
 
+
 class State(rx.State):
     """The app state."""
 
-app = rx.App(state=State,
-        stylesheets=[  "/font/myfont.css",],
+
+app = rx.App(
+    state=State,
+    stylesheets=[
+        "/font/myfont.css",
+    ],
 )
 app.add_page(home)
 app.add_page(about)

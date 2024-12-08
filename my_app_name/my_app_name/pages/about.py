@@ -2,6 +2,8 @@ import reflex as rx
 from rxconfig import config
 from my_app_name.template.template import base_page
 from my_app_name.ui.social_link import social_link
+
+
 @rx.page(route="/about")
 def about() -> rx.Component:
     return base_page(
@@ -20,9 +22,9 @@ def about() -> rx.Component:
                                 border="5px solid #ffffff",
                                 height="80%",
                                 width="auto",
-                                ),
+                            ),
                             rx.heading(
-                                "SKyoKen", 
+                                "SKyoKen",
                                 weight="bold",
                                 font_family="MyFont",
                                 font_size="4em",
@@ -44,36 +46,11 @@ def about() -> rx.Component:
                             height="30%",
                         ),
                         rx.center(
-                            social_link(
-                                "instagram", 
-                                "/#",
-                                color="#ffffff",
-                                size=25
-                            ),
-                            social_link(
-                                "twitter", 
-                                "/#",
-                                color="#ffffff",
-                                size=25
-                            ),
-                            social_link(
-                                "facebook", 
-                                "/#",
-                                color="#ffffff",
-                                size=25
-                            ),
-                            social_link(
-                                "linkedin", 
-                                "/#",
-                                color="#ffffff",
-                                size=25
-                            ),
-                            social_link(
-                                "github", 
-                                "/#",
-                                color="#ffffff",
-                                size=25
-                            ),
+                            social_link("instagram", "/#", color="#ffffff", size=25),
+                            social_link("twitter", "/#", color="#ffffff", size=25),
+                            social_link("facebook", "/#", color="#ffffff", size=25),
+                            social_link("linkedin", "/#", color="#ffffff", size=25),
+                            social_link("github", "/#", color="#ffffff", size=25),
                             spacing="2",
                             width="100%",
                             height="10%",
@@ -94,12 +71,8 @@ def about() -> rx.Component:
                             height="14%",
                         ),
                         rx.flex(
-                            rx.icon("hand-metal",size=35),
-                            rx.text(
-                                "", 
-                                font_size="2em",
-                                weight="bold"
-                            ),
+                            rx.icon("hand-metal", size=35),
+                            rx.text("", font_size="2em", weight="bold"),
                             color="#ffffff",
                             spacing="2",
                             flex_direction="row",
@@ -131,12 +104,8 @@ def about() -> rx.Component:
                             flex_direction="row",
                         ),
                         rx.flex(
-                            rx.icon("paw-print",size=35),
-                            rx.text(
-                                "Pet", 
-                                font_size="2em",
-                                weight="bold"
-                            ),
+                            rx.icon("paw-print", size=35),
+                            rx.text("Pet", font_size="2em", weight="bold"),
                             color="#ffffff",
                             spacing="2",
                             flex_direction="row",
@@ -164,7 +133,7 @@ def about() -> rx.Component:
                                         height="100%",
                                         width="auto",
                                     ),
-                                    width="100%",   
+                                    width="100%",
                                     height="50%",
                                 ),
                                 rx.card(
@@ -175,7 +144,7 @@ def about() -> rx.Component:
                                         height="100%",
                                         width="auto",
                                     ),
-                                    width="100%",   
+                                    width="100%",
                                     height="50%",
                                 ),
                                 height="100%",
@@ -206,6 +175,6 @@ def about() -> rx.Component:
                 flex_direction="column",
                 height="600px",
                 width="100%",
-                ),
             ),
-        )
+        ),
+    )
