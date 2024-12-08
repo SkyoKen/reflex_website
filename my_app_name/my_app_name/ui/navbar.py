@@ -29,7 +29,7 @@ def navbar_images_menu_item(
 ) -> rx.Component:
     return rx.link(
         rx.hstack(
-            rx.image(icon_path, width="1.5em", height="auto"),
+            # rx.image(icon_path, width="1.5em", height="auto"),
             rx.text(text, size="3", weight="medium",font_family="MyFont"),
         ),
         href=url,
@@ -109,7 +109,8 @@ def navbar() -> rx.Component:
                 align_items="center",
             ),
         ),
-        bg=rx.color("sky", 3),
+        background="center/cover url('/bg.jpg')",
+        # bg=rx.color("sky", 3),
         padding="1em",
         # position="fixed",
         # top="0px",

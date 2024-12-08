@@ -11,8 +11,6 @@ from my_app_name.pages.archive import archive
 class State(rx.State):
     """The app state."""
 
-    ...
-
 app = rx.App(state=State,
         stylesheets=[  "/font/myfont.css",],
 )
