@@ -14,7 +14,7 @@ class State(rx.State):
 
 
 app = rx.App(
-    state=State,
+    _state=State,
     stylesheets=[
         "/font/myfont.css",
     ],
