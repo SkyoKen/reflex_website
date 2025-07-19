@@ -4,7 +4,6 @@ import reflex as rx
 
 from my_app_name.pages.home import home
 from my_app_name.pages.about import about
-from my_app_name.pages.contact import contact
 from my_app_name.pages.archive import archive
 
 class State(rx.State):

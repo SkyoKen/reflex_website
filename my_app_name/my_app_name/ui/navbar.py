@@ -55,7 +55,6 @@ def navbar() -> rx.Component:
                         on_click=rx.toggle_color_mode,
                     ),
                     navbar_images_menu_item("Home", "/icon.png", "/#"),
-                    navbar_images_menu_item("Contact", "/icon.png", "/contact"),
                     navbar_images_menu_item("About", "/icon.png", "/about"),
                     navbar_images_menu_item("Archive", "/icon.png", "/archive"),
                     spacing="6",
@@ -98,8 +97,6 @@ def navbar() -> rx.Component:
                     ),
                     rx.menu.content(
                         navbar_images_menu_item("Home", "/icon.png", "/#"),
-                        rx.menu.separator(),
-                        navbar_images_menu_item("Contact", "/icon.png", "/contact"),
                         rx.menu.separator(),
                         navbar_images_menu_item("About", "/icon.png", "/about"),
                         rx.menu.separator(),
