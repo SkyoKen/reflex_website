@@ -19,7 +19,7 @@ def base_page(child: rx.Component, hide_navbar=False, *args, **kwargs) -> rx.Com
         ),
 
         # 页脚
-        footer(),
+        footer() if not hide_navbar else rx.box(),
 
         # base_page
         width="100vw",
