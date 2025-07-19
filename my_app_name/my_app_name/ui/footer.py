@@ -1,17 +1,14 @@
 import reflex as rx
-from rxconfig import config
-from my_app_name.ui.social_link import social_link
-
 
 def footer() -> rx.Component:
-    return rx.flex(
+    return rx.vstack(
         rx.text(
-            "Copyright © SkyoKen Memo 2023",
-            size="3",
-            white_space="nowrap",
-            weight="medium",
-            font_family="MyFont",
+            f"© {2025} SKyoKen. All rights reserved.",
+            color=rx.color("white"), # 页脚文本为白色
+            font_size="0.8em",
         ),
-        justify_content="center",
-        width="100%",
+        padding="1em",
+        bg=rx.color("black"), # 页脚背景设为黑色
+        width="100%", # 确保占据整个宽度
+        align_items="center", # 内容居中
     )
